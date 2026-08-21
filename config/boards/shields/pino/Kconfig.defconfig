@@ -1,0 +1,10 @@
+if SHIELD_PINO
+
+config ZMK_KEYBOARD_NAME
+    default "Pino"
+
+# XIAO nRF52840のNFCピンをスイッチとして使うための必須設定
+config NFCT_PINS_AS_GPIOS
+    default y
+
+endif
