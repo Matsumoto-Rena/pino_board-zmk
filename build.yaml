@@ -1,4 +1,3 @@
-# build.yaml
 include:
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble  # ← ここを seeeduino_xiao_ble から変更
     shield: pino
