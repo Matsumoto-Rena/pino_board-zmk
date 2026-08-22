@@ -8,9 +8,16 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = <
-                &kp A        &kp B         &kp C
-                &bt BT_CLR   &out OUT_BLE  &out OUT_USB
+            bindings = 
+                &kp LC(Z)      &kp LC(C)   &kp LC(V)
+                &kp LC(X)      &kp LC(Y)   &mo 1
+            >;
+        };
+
+        lower_layer {
+            bindings = 
+                &kp LC(S)      &kp LC(F)   &kp LC(A)
+                &kp LA(TAB)    &bt BT_CLR  &trans
             >;
         };
     };
